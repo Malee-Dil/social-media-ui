@@ -17,7 +17,8 @@
     }
 
     @include ipad{
-        display: none;
+        flex: 1;
+        max-width: 250px;
     }
 
     &::-webkit-scrollbar{

@@ -103,7 +103,7 @@
   
   
   /* Responsive Design */
-  @media (max-width: 768px) {
+    @media (max-width: 768px) {
     .stories {
       height: 160px;
     }
@@ -122,7 +122,31 @@
       font-size: 12px;
     }
   }
+
+  @include mobile{
+    .stories {
+      height: 60px;
+      gap: 5px;
+    }
+
+    .story {
+      flex: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .story button {
+      width: 25px;
+      height: 25px;
+      font-size: 18px;
+    }
+
+    .story span {
+      display: none;
+    }
   }
+}
 
   .stories::-webkit-scrollbar {
     display: none;

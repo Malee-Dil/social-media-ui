@@ -45,7 +45,7 @@ color: themed("textColor");
                 }
 
                 @include ipad{
-                    display: 200px;
+                    width: 200px;
                 }
             }
         }

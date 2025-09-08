@@ -47,6 +47,9 @@
             .content{
                 margin: 20px 0px;
 
+                @include mobile{
+                    margin: 15px 0px;
+                }
 
                 img{
                     width: 100%;
@@ -54,6 +57,14 @@
                     object-fit: cover;
                     margin-top: 15px;
 
+                    @include mobile{
+                        max-height: 300px;
+                        margin-top: 10px;
+                    }
+
+                    @include ipad{
+                        max-height: 400px;
+                    }
                 }
             }
 
